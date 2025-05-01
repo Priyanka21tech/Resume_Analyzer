@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Analyzer</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h2>Smart Resume Analyzer</h2>
+
+  {% if error %}
+    <p style="color: red;">{{ error }}</p>
+  {% endif %}
+
+  <form action="/analyze" method="POST" enctype="multipart/form-data">
+    <label>Upload Resume (PDF Only):</label><br>
+    <input type="file" name="resume" accept=".pdf" required><br><br>
+
+    
+    <label>PDF Password (if any):</label><br>
+  <input type="password" name="pdf_password"><br><br>
+
+  
+    <label>Paste Job Description:</label><br>
+    <textarea name="job_desc" rows="10" cols="60" required></textarea><br><br>
+
+
+    <input type="submit" value="Analyze">
+  </form>
+</body>
+</html>
