@@ -1,6 +1,9 @@
 # Resume_Analyzer
 A web-based Resume Analyzer that allows users to upload resumes in PDF format, then extracts and analyzes the content.
 
+Project Overview-
+The Resume Analyzer project aims to streamline the recruitment process by intelligently evaluating candidate resumes against specific job descriptions using AI. It allows users to upload resume PDFs—supporting encrypted files with optional passwords—and compares them to job descriptions written in proper bullet-point format. The system ensures both inputs meet formatting standards before proceeding. Using LangChain and a carefully crafted LLM prompt, it provides a structured analysis including a match score, missing qualifications, improvement suggestions, and rewritten resume points—presented in a clear, markdown-formatted output for easy review.
+
 Here is the project structure:
 
 -->ResumeCheck
